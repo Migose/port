@@ -1,0 +1,55 @@
+{% extends 'base.html'%}
+
+{% block contents %}
+<head>
+    <style>
+        .img_box{
+            width: 100%;
+            max-height: 100%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col mt-5 text-center">
+                <h1>손은호 도감</h1>
+                <p>서울 시내에서 서식하고 있는 손은호에 대해 알아볼까요?<br>
+                </br>
+                특징 하나하나 천천히 둘러보세요!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4  ">
+                <a href="{% url 'demo' %}">
+                    <img src="https://dummyimage.com/600x400/000/fff" class="img_box" alt="Responsive image">
+                </a>
+            </div>
+            <div class="col-12 col-md-4  " >
+                <a href="{% url 'food' %}">
+                    <img src="https://dummyimage.com/600x400/000/fff" class="img_box" alt="Responsive image">
+                </a>
+            </div>
+            <div class="col-12 col-md-4  ">
+                <a href="{% url 'game' %}">
+                    <img src="https://dummyimage.com/600x400/000/fff" class="img_box" alt="Responsive image">
+                </a>
+            </div>
+            <div class="col-12 col-md-6  ">
+                <a href="{% url 'career' %}">
+                    <img src="https://dummyimage.com/600x400/000/fff" class="img_box" alt="Responsive image">
+                </a>
+            </div>
+            <div class="col-12 col-md-6  ">
+                <a href="{% url 'chrono' %}">
+                    <img src="https://dummyimage.com/600x400/000/fff" class="img_box" alt="Responsive image">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="row" style="height: 300px">
+            
+        </div> -->
+    </div>
+</body>
+{% endblock %}
